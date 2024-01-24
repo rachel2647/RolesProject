@@ -2,10 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-namespace MyProject.Repositories.Repositories
+namespace MyProject.Repositories.Interfaces
 
 {
-    interface IRoleRepository
+    public interface IRoleRepository
     {
         List<Role> GetAll();
 

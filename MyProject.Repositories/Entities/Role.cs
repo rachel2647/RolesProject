@@ -4,8 +4,7 @@ using System.Text;
 
 namespace MyProject.Repositories.Entities
 {
-    enum Policy { Allow,Deny};
-    class Role
+    public class Role
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -14,6 +13,6 @@ namespace MyProject.Repositories.Entities
             return $"Role: {this.Id}, {this.Name}";
         }
     }
-  
-    
+
+
 }

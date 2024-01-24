@@ -1,20 +1,18 @@
-﻿using System;
+﻿using MyProject.Repositories.Entities;
+using System;
 using System.Collections.Generic;
-using System.Security.Claims;
 using System.Text;
 
-namespace MyProject.Repositories.Repositories
+namespace MyProject.Repositories.Interfaces
 {
-    interface IClaimRepository
+    public interface IClaimRepository
     {
         List<Claim> GetAll();
-
-        Claim GetById(int id);
-
-        Claim Add(int id, string name);
-
-        Claim Update(Claim role);
-
+        Claim GetById(int climId);
+        Claim Add(int id, int rId, int pId, Policy policy);
+        Claim Update(Claim claim);
         void Delete(int id);
+
+
     }
 }

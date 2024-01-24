@@ -4,7 +4,8 @@ using System.Text;
 
 namespace MyProject.Repositories.Entities
 {
-    class Claim
+    public enum Policy { Allow, Deny }
+    public class Claim
     {
         public int Id { get; set; }
         public int RoleId { get; set; }

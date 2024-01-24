@@ -4,13 +4,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MyProject.ConsoleApp\MyProject.ConsoleApp.csproj" />
-    <ProjectReference Include="..\MyProject.Mock\MyProject.Mock.csproj" />
-  </ItemGroup>
-
 </Project>

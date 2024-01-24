@@ -2,18 +2,18 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-namespace MyProject.Repositories.Repositories
+namespace MyProject.Repositories.Interfaces
 {
-    interface IPermissionRepository
+    public interface IPermissionRepository
     {
-            List<Permission> GetAll();
+        List<Permission> GetAll();
 
-            Permission GetById(int id);
+        Permission GetById(int id);
 
-            Permission Add(int id, string name);
+        Permission Add(int id, string name);
 
-            Permission Update(Permission role);
+        Permission Update(Permission role);
 
-            void Delete(int id);
+        void Delete(int id);
     }
 }
